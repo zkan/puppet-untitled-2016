@@ -37,3 +37,6 @@ build/
 
 # Vagrant
 .vagrant
+
+# Swp
+*.swp
