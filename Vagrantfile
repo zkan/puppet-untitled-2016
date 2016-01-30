@@ -11,8 +11,18 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
         master.vm.network :private_network, ip: "192.168.33.10"
     end
 
-    config.vm.define "wp1" do |agent|
-        agent.vm.host_name = "wp1"
+    config.vm.define "a1" do |agent|
+        agent.vm.host_name = "a1"
         agent.vm.network :private_network, ip: "192.168.33.11"
+    end
+
+    config.vm.define "a2" do |agent|
+        agent.vm.host_name = "a2"
+        agent.vm.network :private_network, ip: "192.168.33.12"
+    end
+
+    config.vm.define "a3" do |agent|
+        agent.vm.host_name = "a3"
+        agent.vm.network :private_network, ip: "192.168.33.13"
     end
 end
