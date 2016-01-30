@@ -40,3 +40,6 @@ build/
 
 # Swp
 *.swp
+
+# Python
+*.pyc
