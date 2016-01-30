@@ -1,2 +1,2 @@
-# puppet-wordpress
-Puppet to Automate WordPress Installation
+# Puppet Workshop at Unititled Conference 2016
+Puppet to something..
