@@ -19,6 +19,12 @@ def test():
             local('rspec')
 
 
+def push():
+    with lcd('puppet'):
+        local('git add .')
+        local('git push origin master')
+
+
 def deploy():
     puppet()
     test()
