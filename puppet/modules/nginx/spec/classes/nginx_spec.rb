@@ -6,7 +6,7 @@ describe "nginx" do
 
     it {
         should contain_package('nginx').with(
-            "ensure"  => "1.6.2-1~trusty"
+            "ensure"  => "installed"
         )
     }
 end

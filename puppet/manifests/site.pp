@@ -3,8 +3,8 @@ node "a1" {
     ensure => "installed"
   }
 
-  user { 'agent-1':
-    ensure => present,
+  user { "agent-1":
+    ensure => "present",
   }
 }
 
@@ -13,12 +13,10 @@ node "a2" {
     ensure => "installed"
   }
 
-  package { "nginx":
-    ensure => "installed"
-  }
+  include nginx
 
-  user { 'agent-2':
-    ensure => present,
+  user { "agent-2":
+    ensure => "present",
   }
 }
 
@@ -27,7 +25,7 @@ node "a3" {
     ensure => "installed"
   }
 
-  user { 'agent-3':
-    ensure => present,
+  user { "agent-3":
+    ensure => "present",
   }
 }
