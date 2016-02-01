@@ -5,7 +5,7 @@ describe "nginx" do
     it { should contain_class("nginx") }
 
     it {
-        should contain_package('nginx').with(
+        should contain_package("nginx").with(
             "ensure"  => "installed"
         )
     }
