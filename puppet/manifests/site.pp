@@ -1,7 +1,5 @@
 node "a1" {
-  package { "git-core":
-    ensure => "installed"
-  }
+  include git
 
   user { "agent-1":
     ensure => "present",
