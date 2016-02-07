@@ -6,6 +6,8 @@ node "a1" {
   user { "agent-1":
     ensure => "present",
   }
+
+  include apache2
 }
 
 node "a2" {
