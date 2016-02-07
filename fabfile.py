@@ -18,6 +18,9 @@ def test():
         with lcd('nginx'):
             local('rspec')
 
+        with lcd('apache2'):
+            local('rspec')
+
 
 def push():
     with lcd('puppet'):
