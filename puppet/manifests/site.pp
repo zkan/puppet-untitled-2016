@@ -11,7 +11,9 @@ node "a2" {
     ensure => "installed"
   }
 
-  include nginx
+  class { "nginx"
+    server_name => "puppet-untitled-2016"
+  }
 
   user { "agent-2":
     ensure => "present",
